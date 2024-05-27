@@ -3,6 +3,7 @@ import requests
 import json
 import sqlite3
 import win11toast
+from datetime import datetime
 # os.system("pip install <module name>")
 
 key = '887aaff89bee4fd742287bfd4afa2483'
@@ -46,13 +47,15 @@ cur.execute("""
         id integer primary key autoincrement,
         city varchar(20),
         weather varchar(20),
-        temp integer
+        temp integer,
+        time date
     )
 """)
 
 # Insert data into table
-columns = (city, weather, weather_temp)
-# cur.executemany("insert into weather (city, weather, temp) values (?, ?, ?)", (columns, ))
+time = datetime.now()
+columns = (city, weather, weather_temp, time)
+cur.executemany("insert into weather (city, weather, temp, time) values (?, ?, ?, ?)", (columns, ))
 
 # Commit changes and close connection
 conn.commit()
@@ -61,3 +64,4 @@ conn.close()
 # Notification
 info = f'It is {weather_temp} degrees in {city}'
 win11toast.toast(f"Weather", info, dialogue=info, duration='short', buttons=['Open app', 'Dismiss'])
+
