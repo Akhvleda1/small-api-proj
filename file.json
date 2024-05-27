@@ -1,43 +1,44 @@
 {
     "coord": {
-        "lon": 44.8337,
-        "lat": 41.6941
+        "lon": 54.3928,
+        "lat": 36.2105
     },
     "weather": [
         {
-            "id": 802,
+            "id": 801,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "description": "few clouds",
+            "icon": "02d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 24.84,
-        "feels_like": 24.76,
-        "temp_min": 24.84,
-        "temp_max": 24.84,
-        "pressure": 1015,
-        "humidity": 53
+        "temp": 29.79,
+        "feels_like": 28.37,
+        "temp_min": 29.79,
+        "temp_max": 29.79,
+        "pressure": 1007,
+        "humidity": 27,
+        "sea_level": 1007,
+        "grnd_level": 885
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.57,
-        "deg": 150
+        "speed": 5.4,
+        "deg": 310,
+        "gust": 4.52
     },
     "clouds": {
-        "all": 40
+        "all": 23
     },
-    "dt": 1716815988,
+    "dt": 1716819761,
     "sys": {
-        "type": 1,
-        "id": 8862,
-        "country": "GE",
-        "sunrise": 1716773484,
-        "sunset": 1716827078
+        "country": "IR",
+        "sunrise": 1716772119,
+        "sunset": 1716823854
     },
-    "timezone": 14400,
-    "id": 611717,
-    "name": "Tbilisi",
+    "timezone": 12600,
+    "id": 138025,
+    "name": "Jazan",
     "cod": 200
 }
