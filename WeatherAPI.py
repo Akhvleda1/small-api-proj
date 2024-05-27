@@ -11,7 +11,6 @@ units = 'metric'
 city = input("Enter the city name: ")
 url = 'https://api.openweathermap.org/data/2.5/weather?'
 
-
 params = {
     'q': city,
     'appid': key,
@@ -64,4 +63,3 @@ conn.close()
 # Notification
 info = f'It is {weather_temp} degrees in {city}'
 win11toast.toast(f"Weather", info, dialogue=info, duration='short', buttons=['Open app', 'Dismiss'])
-
